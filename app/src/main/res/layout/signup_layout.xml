@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/tv_rg_email"
+        style="@style/EditTextbox"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="35dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/tv_rg_name"
+        style="@style/EditTextbox"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="5dp"
+        android:hint="Name"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/tv_rg_passwrod"
+        style="@style/EditTextbox"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_createnewaccount"
+        style="@style/btnPrimaryMedium"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Create new account" />
+</LinearLayout>

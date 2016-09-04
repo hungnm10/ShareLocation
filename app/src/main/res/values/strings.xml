@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Share Location</string>
+    <string name="channel_name">Channel: </string>
+    <string name="share_button">Share Location</string>
+    <string name="follow_button">View Friend\'s Location</string>
+    <string name="gmaps">Google Maps</string>
+    <string name="mapbox">MapBox</string>
+    <string name="channel_hint">Please enter a channel</string>
+    <string name="gmaps_share_location_activity">Share Location Activity</string>
+    <string name="gmaps_follow_location_activity">Follow Location Activity</string>
+    <string name="mbox_share_location_activity">Share Location Activity</string>
+    <string name="mbox_follow_location_activity">Follow Location Activity</string>
+    <string name="share_location">Start Sharing Your Location</string>
+    <string name="follow_location">Start Viewing Your Friend\'s Location</string>
+    <!-- <string name="action_settings">Settings</string> -->
+
+    <string name="event_tab">EVENT</string>
+    <string name="tour_tab">TOUR</string>
+    /* List channel*/
+    <string name="list_channel">List channel</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_maps">Set Location</string>
+
+</resources>

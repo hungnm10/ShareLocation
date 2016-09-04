@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_channelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Channel name"/>
+
+    <EditText
+        android:id="@+id/edt_channelDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+    <com.huho.android.sharelocation.utils.custom.EditTextDatePicker
+        android:id="@+id/edt_channelDateStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start time"/>
+
+    <com.huho.android.sharelocation.utils.custom.EditTextDatePicker
+        android:id="@+id/edt_channelDateEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End time" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_channelLocalSrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:hint="Src"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/btn_channelLocalSrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_channelLocalDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:hint="Des"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/btn_channelLocalDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="MAP" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_max"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numeric="decimal"
+        android:hint="Max member" />
+
+    <Button
+        android:id="@+id/btn_createchannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create channel" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/marker_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_marker"
+        android:scaleType="fitXY"
+        android:layout_alignLeft="@+id/num_txt"
+        android:layout_alignStart="@+id/num_txt" />
+
+    <TextView
+        android:id="@+id/num_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="20"
+        android:textColor="#ce8223"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

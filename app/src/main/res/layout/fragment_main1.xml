@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.huho.android.sharelocation.utils.common.CustomViewPage
+        android:id="@+id/sub_container"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/tab_height"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sub_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layoutMode="opticalBounds"
+        app:tabIndicatorColor="@color/color_primary_red_dark"
+        android:layout_gravity="center|top"/>
+</FrameLayout>

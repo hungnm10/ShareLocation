@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/custom_titlebar_area"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/color_primary_red"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/custom_cancel_button"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:nextFocusDown="@+id/location_name_content"
+            android:text="Cancel"
+            android:textAppearance="?android:attr/actionMenuTextAppearance"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/custom_done_button"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Save"
+            android:textAppearance="?android:attr/actionMenuTextAppearance"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mapview_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/edittext_with_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/mapview_edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:elevation="3dp">
+
+                <EditText
+                    android:id="@+id/location_sources_current_location_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:imeOptions="actionDone|flagNoEnterAction"
+                    android:inputType="textCapSentences"
+                    android:minHeight="32dp"
+                    android:paddingRight="36dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/clear_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|end"
+                    android:focusable="true"
+                    android:src="@drawable/tw_ic_clear_search_api_mtrl"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="0dp"
+                    android:focusable="false"
+                    android:src="@drawable/search_field_icon_search"
+                    android:tint="#7f7f7f"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/current_btn_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ripple_with_mask_bg"
+            android:layout_weight="0">
+
+            <ImageView
+                android:id="@+id/mapview_button_current"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mylocation_btn_normal"
+                android:tint="#7f7f7f" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.huho.android.sharelocation.main.gmaps.MapsActivity" />
+</LinearLayout>
